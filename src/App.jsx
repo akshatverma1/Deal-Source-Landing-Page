@@ -1,14 +1,20 @@
 import { Button } from "./components/ui/button"
 import { CheckCircle, Search, BarChart3, Database, Clock, Users, Target } from "lucide-react"
 import Sem from "./assets/sem.svg"
+import navbarLogo from "./assets/Deal-Source-NavBar-Logo.svg";
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
       <header className="border-b sticky top-0 z-50 bg-white">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-primary">Deal</span>Source
+          <div className="flex items-center gap-2">
+            <img
+            src={navbarLogo}
+            alt="DealSource Logo"
+            className="w-[11.209375rem] h-[1.625rem]"
+            />
+            {/* <span className="text-primary">Deal</span>Source */}
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#" className="text-sm font-medium">
