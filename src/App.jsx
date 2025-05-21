@@ -1,5 +1,5 @@
 import { Button } from "./components/ui/button"
-import { CheckCircle, Search, BarChart3, Database, Users, Target,Clock,Puzzle } from "lucide-react"
+import { CheckCircle, Search, BarChart3, Database, Users, Target, Clock, Puzzle } from "lucide-react"
 import Sem from "./assets/sem.svg"
 import navbarLogo from "./assets/Deal-Source-NavBar-Logo.svg";
 import HeroSectionImage from "./assets/Untitled.svg";
@@ -10,6 +10,9 @@ import Fluks from "./assets/Trusted-Section/fluks.svg"
 import Microsoft from "./assets/Trusted-Section/microsoft.svg"
 import Next from "./assets/Trusted-Section/next.svg"
 import Webroot from "./assets/Trusted-Section/webroot.svg"
+import Benefits1 from "./assets/Benefits/benefits-1.svg"
+import Benefits2 from "./assets/Benefits/benefits-2.svg"
+import Benefits3 from "./assets/Benefits/benefits-3.svg"
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -85,90 +88,24 @@ function App() {
           </div>
         </section>
 
-        {/* Benefits Section */}
-        {/* <section className="py-20">
-          <div className="container">
-            <h2 className="text-3xl font-bold text-center mb-16">Benefits</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="flex flex-col items-center text-center p-6">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <CheckCircle className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-3">High-Quality Deals</h3>
-                <p className="text-gray-600">
-                Discover the best potential buyers and add-on opportunities instantly—curated, high-quality deals at your fingertips.
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center p-6">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Clock className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-3">Save valuable time</h3>
-                <p className="text-gray-600">
-                Save valuable time by accessing verified, deal-ready insights in one click—so you can focus onthe value-adding work that truly matters.
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center p-6">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Target className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-3">Find more with less</h3>
-                <p className="text-gray-600">
-                Streamline the processof identifying, vetting, and acting on add-on deals, so you can focus on creating long-term value.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section> */}
 
-
-        {/* Benefits Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Benefits</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <h2 className="text-4xl font-bold text-center mb-10">Benefits</h2>
+            <div className="grid md:grid-cols-3 gap-0 pl-40 pr-40 place-items-center">
               {/* Card 1 */}
-              <div className="bg-white rounded-xl shadow-md p-8">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-10 h-10 flex items-center justify-center text-blue-600">
-                    <CheckCircle className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-lg font-semibold">High Quality Deals</h3>
-                </div>
-                <p className="text-gray-600">
-                  Discover the best potential buyers and add-on opportunities instantly—curated, high-quality deals at your fingertips.
-                </p>
-              </div>
-
-              {/* Card 2 */}
-              <div className="bg-white rounded-xl shadow-md p-8">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-10 h-10 flex items-center justify-center text-blue-600">
-                    <Clock className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-lg font-semibold">Save valuable time</h3>
-                </div>
-                <p className="text-gray-600">
-                  Save valuable time by accessing verified, deal-ready insights in one click—so you can focus on the value-adding work that truly matters.
-                </p>
-              </div>
-
-              {/* Card 3 */}
-              <div className="bg-white rounded-xl shadow-md p-8">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-10 h-10 flex items-center justify-center text-blue-600">
-                    <Puzzle className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-lg font-semibold">Find more add-ons</h3>
-                </div>
-                <p className="text-gray-600">
-                  Streamline the process of identifying, vetting, and acting on add-on deals, so you can focus on creating long-term value.
-                </p>
-              </div>
+                {/* <div className="w-[248px] h-[300px] rounded-lg overflow-hidden shadow-lg"> */}
+                <img src={Benefits1} alt="" className="w-[300px] h-[400px] m-0" />
+                {/* </div> */}
+                {/* <div> */}
+                <img src={Benefits2} alt="" className="w-[300px] h-[400px]" />
+                {/* </div> */}
+                {/* <div> */}
+                <img src={Benefits3} alt="" className="w-[300px] h-[400px]" />
+                {/* </div> */}
             </div>
           </div>
         </section>
-
 
         {/* Core Features */}
         <section className="py-20 bg-gray-50">
