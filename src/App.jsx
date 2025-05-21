@@ -93,52 +93,51 @@ function App() {
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-10">Benefits</h2>
             <div className="grid md:grid-cols-3 gap-0 pl-40 pr-40 place-items-center">
-              {/* Card 1 */}
-                {/* <div className="w-[248px] h-[300px] rounded-lg overflow-hidden shadow-lg"> */}
-                <img src={Benefits1} alt="" className="w-[300px] h-[400px] m-0" />
-                {/* </div> */}
-                {/* <div> */}
-                <img src={Benefits2} alt="" className="w-[300px] h-[400px]" />
-                {/* </div> */}
-                {/* <div> */}
-                <img src={Benefits3} alt="" className="w-[300px] h-[400px]" />
-                {/* </div> */}
+                <img src={Benefits1} className="w-[300px] h-[400px] m-0" />
+                <img src={Benefits2} className="w-[300px] h-[400px]" />
+                <img src={Benefits3} className="w-[300px] h-[400px]" />
             </div>
           </div>
         </section>
 
-        {/* Core Features */}
-        <section className="py-20 bg-gray-50">
+        <section className="">
           <div className="container">
-            <h2 className="text-3xl font-bold text-center mb-16">Core Features</h2>
+            <h2 className="text-3xl font-bold text-center mt-12">Core Features</h2>
+          </div>
+        </section>
+
+
+        {/* Core Features */}
+        <section className="py-20">
+          <div className="container w-[50rem] border p-6 rounded-lg">
+            <h2 style={{color:"#1940BE"}} className="text-3xl font-bold text-center mb-4">AI-Powered Search</h2>
+            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+            Find the perfect M&A targets with a single click
+            </p>
             <div className="grid md:grid-cols-4 gap-8">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Search className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">AI-Powered Search</h3>
-                <p className="text-sm text-gray-600">Find the perfect fit based on a range of criteria</p>
+              <div className="flex flex-col"> 
+                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">One‑Click Target Lists</h3>
+                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
+                Generate a fully vetted list of opportunities the moment you hit “Search.”
+                </p>
               </div>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Database className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Proprietary Data</h3>
-                <p className="text-sm text-gray-600">Access exclusive information not available elsewhere</p>
+              <div className="flex flex-col">
+                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Proprietary Data Engine</h3>
+                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
+                Tap into our curated dataset updated daily for unmatched relevance and accuracy with Natural Language Search.
+                </p>
               </div>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Users className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Comprehensive Profiles</h3>
-                <p className="text-sm text-gray-600">Get in-depth insights on companies and executives</p>
+              <div className="flex flex-col">
+                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Customizable Filters</h3>
+                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
+                Tailor by revenue, geography, sector, deal size, or any criteria you need on the fly.
+                </p>
               </div>
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <BarChart3 className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">In-Depth Searching</h3>
-                <p className="text-sm text-gray-600">Filter by multiple criteria to find exact matches</p>
+              <div className="flex flex-col">
+                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-32 mb-4">No More Endless Searching</h3>
+                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
+                Spend seconds, not days, filtering, ranking, and exporting your shortlist.
+                </p>
               </div>
             </div>
           </div>
@@ -146,7 +145,7 @@ function App() {
 
         {/* Industry-Driven Database */}
         <section className="py-20">
-          <div className="container">
+          <div className="container w-[800px] border">
             <h2 className="text-3xl font-bold text-center mb-4">Industry-Driven Database</h2>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
               Our proprietary database is built specifically for deal professionals and private equity investors to find
@@ -183,6 +182,7 @@ function App() {
             </div>
           </div>
         </section>
+
 
         {/* Stats Section */}
         <section className="py-20 bg-gray-50">
