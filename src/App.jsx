@@ -2,6 +2,7 @@ import { Button } from "./components/ui/button"
 import { CheckCircle, Search, BarChart3, Database, Clock, Users, Target } from "lucide-react"
 import Sem from "./assets/sem.svg"
 import navbarLogo from "./assets/Deal-Source-NavBar-Logo.svg";
+import HeroSectionImage from "./assets/Untitled.svg";
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -54,8 +55,8 @@ function App() {
               </Button> */}
             </div>
             <div className="relative mx-auto max-w-4xl">
-              <div className="bg-white rounded-lg shadow-xl overflow-hidden border">
-                <img src="/placeholder.svg?height=600&width=1000" alt="DealSource Dashboard" className="w-full" />
+              <div className="rounded-lg overflow-hidden ">
+                <img src={HeroSectionImage} alt="DealSource Dashboard" className="w-full" />
               </div>
             </div>
           </div>
