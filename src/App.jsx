@@ -13,6 +13,8 @@ import Webroot from "./assets/Trusted-Section/webroot.svg"
 import Benefits1 from "./assets/Benefits/benefits-1.svg"
 import Benefits2 from "./assets/Benefits/benefits-2.svg"
 import Benefits3 from "./assets/Benefits/benefits-3.svg"
+import Aiicon from "./assets/Core-Features/ai.svg"
+import IndustruIcon from "./assets/Core-Features/industry.svg"
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -89,13 +91,13 @@ function App() {
         </section>
 
 
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
+        <section className="py-20">
+          <div className="container mx-auto px-4 w-[70rem]">
             <h2 className="text-4xl font-bold text-center mb-10">Benefits</h2>
             <div className="grid md:grid-cols-3 gap-0 pl-40 pr-40 place-items-center">
-                <img src={Benefits1} className="w-[300px] h-[400px] m-0" />
-                <img src={Benefits2} className="w-[300px] h-[400px]" />
-                <img src={Benefits3} className="w-[300px] h-[400px]" />
+              <img src={Benefits1} className="w-[300px] h-[400px] m-0" />
+              <img src={Benefits2} className="w-[300px] h-[400px]" />
+              <img src={Benefits3} className="w-[300px] h-[400px]" />
             </div>
           </div>
         </section>
@@ -109,34 +111,37 @@ function App() {
 
         {/* Core Features */}
         <section className="py-20">
-          <div className="container w-[50rem] border p-6 rounded-lg">
-            <h2 style={{color:"#1940BE"}} className="text-3xl font-bold text-center mb-4">AI-Powered Search</h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-            Find the perfect M&A targets with a single click
+          <div className="container w-[70rem] border p-6 rounded-lg">
+            <div class="flex justify-center m-2">
+              <img src={Aiicon} alt="Centered image" className="w-[4rem] h-[4rem]"/>
+            </div>
+            <h2 style={{ color: "#1940BE" }} className="text-2xl font-bold text-center mt-2 mb-2">AI-Powered Search</h2>
+            <p style={{ fontWeight: "500" }} className="font-assistant text-center text-gray-600 max-w-2xl mx-auto mb-10 text-sm">
+              Find the perfect M&A targets with a single click
             </p>
             <div className="grid md:grid-cols-4 gap-8">
-              <div className="flex flex-col"> 
-                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">One‑Click Target Lists</h3>
-                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
-                Generate a fully vetted list of opportunities the moment you hit “Search.”
+              <div className="flex flex-col">
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">One‑Click Target Lists</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Generate a fully vetted list of opportunities the moment you hit “Search.”
                 </p>
               </div>
               <div className="flex flex-col">
-                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Proprietary Data Engine</h3>
-                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
-                Tap into our curated dataset updated daily for unmatched relevance and accuracy with Natural Language Search.
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Proprietary Data Engine</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Tap into our curated dataset updated daily for unmatched relevance and accuracy with Natural Language Search.
                 </p>
               </div>
               <div className="flex flex-col">
-                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Customizable Filters</h3>
-                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
-                Tailor by revenue, geography, sector, deal size, or any criteria you need on the fly.
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Customizable Filters</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Tailor by revenue, geography, sector, deal size, or any criteria you need on the fly.
                 </p>
               </div>
               <div className="flex flex-col">
-                <h3 style={{fontWeight:"750"}} className="font-assistant text-sm mb-2 h-8 w-32 mb-4">No More Endless Searching</h3>
-                <p style={{fontWeight:"500"}} className="font-assistant text-xs text-gray-600">
-                Spend seconds, not days, filtering, ranking, and exporting your shortlist.
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-32 mb-4">No More Endless Searching</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Spend seconds, not days, filtering, ranking, and exporting your shortlist.
                 </p>
               </div>
             </div>
@@ -145,40 +150,39 @@ function App() {
 
         {/* Industry-Driven Database */}
         <section className="py-20">
-          <div className="container w-[800px] border">
-            <h2 className="text-3xl font-bold text-center mb-4">Industry-Driven Database</h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-              Our proprietary database is built specifically for deal professionals and private equity investors to find
-              the perfect fit.
+          <div className="container w-[70rem] border p-6 rounded-lg">
+            <div class="flex justify-center m-2">
+              <img style={{ color: "#1940BE" }} src={IndustruIcon} alt="Centered image" className="w-[4rem] h-[4rem]"/>
+            </div>
+            <h2 style={{ color: "#1940BE" }} className="text-2xl font-bold text-center mt-2 mb-2">Industry-Driven Database</h2>
+            <p style={{ fontWeight: "500" }} className="font-assistant text-center text-gray-600 max-w-2xl mx-auto mb-10 text-sm w-[24rem]">
+            The most complete, real-time platform for deal intelligence and sector-specific metrics in M&A and PE.
             </p>
             <div className="grid md:grid-cols-4 gap-8">
               <div className="flex flex-col">
-                <h3 className="text-lg font-semibold mb-2">One-Click Target Lists</h3>
-                <p className="text-sm text-gray-600">
-                  Generate targeted company lists with a single click based on your criteria
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">One‑Click Target Lists</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Generate a fully vetted list of opportunities the moment you hit “Search.”
                 </p>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-lg font-semibold mb-2">Proprietary Data Engine</h3>
-                <p className="text-sm text-gray-600">
-                  Access exclusive information gathered from multiple sources and enhanced with AI
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Proprietary Data Engine</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Tap into our curated dataset updated daily for unmatched relevance and accuracy with Natural Language Search.
                 </p>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-lg font-semibold mb-2">Customizable Filters</h3>
-                <p className="text-sm text-gray-600">
-                  Create and save custom filters to quickly find the companies that match your investment thesis
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-24 mb-4">Customizable Filters</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Tailor by revenue, geography, sector, deal size, or any criteria you need on the fly.
                 </p>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-lg font-semibold mb-2">In-Depth Searching</h3>
-                <p className="text-sm text-gray-600">
-                  Search by industry, size, location, growth rate, and dozens of other criteria
+                <h3 style={{ fontWeight: "750" }} className="font-assistant text-sm mb-2 h-8 w-32 mb-4">No More Endless Searching</h3>
+                <p style={{ fontWeight: "500" }} className="font-assistant text-xs text-gray-600">
+                  Spend seconds, not days, filtering, ranking, and exporting your shortlist.
                 </p>
               </div>
-            </div>
-            <div className="flex justify-center mt-12">
-              <Button>Learn More</Button>
             </div>
           </div>
         </section>
@@ -186,7 +190,7 @@ function App() {
 
         {/* Stats Section */}
         <section className="py-20 bg-gray-50">
-          <div className="container">
+          <div className="container w-[70rem]">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="max-w-md mb-10 md:mb-0">
                 <h2 className="text-2xl font-bold mb-4">
@@ -217,7 +221,7 @@ function App() {
         </section>
 
         {/* Tailored Intelligence Section */}
-        <section className="py-20 bg-gray-900 text-white">
+        <section className="py-20 bg-gray-900 text-white m-20 rounded-2xl w=[70rem]">
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-16">Tailored Intelligence for Every Dealmaker</h2>
 
@@ -273,7 +277,7 @@ function App() {
 
         {/* Testimonial Section */}
         <section className="py-20">
-          <div className="container">
+          <div className="container w-[74rem]">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                 <img
