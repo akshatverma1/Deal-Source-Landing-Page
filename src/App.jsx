@@ -1,8 +1,15 @@
 import { Button } from "./components/ui/button"
-import { CheckCircle, Search, BarChart3, Database, Clock, Users, Target } from "lucide-react"
+import { CheckCircle, Search, BarChart3, Database, Users, Target,Clock,Puzzle } from "lucide-react"
 import Sem from "./assets/sem.svg"
 import navbarLogo from "./assets/Deal-Source-NavBar-Logo.svg";
 import HeroSectionImage from "./assets/Untitled.svg";
+import BitDefender from "./assets/Trusted-Section/bit-defender.svg"
+import Cisco from "./assets/Trusted-Section/cisco.svg"
+import Ubiquiti from "./assets/Trusted-Section/ubquite.svg"
+import Fluks from "./assets/Trusted-Section/fluks.svg"
+import Microsoft from "./assets/Trusted-Section/microsoft.svg"
+import Next from "./assets/Trusted-Section/next.svg"
+import Webroot from "./assets/Trusted-Section/webroot.svg"
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -11,9 +18,9 @@ function App() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-            src={navbarLogo}
-            alt="DealSource Logo"
-            className="w-[11.209375rem] h-[1.625rem]"
+              src={navbarLogo}
+              alt="DealSource Logo"
+              className="w-[11.209375rem] h-[1.625rem]"
             />
             {/* <span className="text-primary">Deal</span>Source */}
           </div>
@@ -63,22 +70,23 @@ function App() {
         </section>
 
         {/* Trusted By Section */}
-        <section className="py-12 bg-gray-50">
+        <section className="py-12">
           <div className="container">
             <p className="text-center text-sm uppercase font-medium text-gray-500 mb-8">TRUSTED BY</p>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center opacity-70">
-              <img src="/placeholder.svg?height=40&width=100" alt="Cisco" />
-              <img src="/placeholder.svg?height=40&width=100" alt="Bitdefender" />
-              <img src="/placeholder.svg?height=40&width=100" alt="LinkedIn" />
-              <img src="/placeholder.svg?height=40&width=100" alt="Microsoft" />
-              <img src="/placeholder.svg?height=40&width=100" alt="Webroot" />
-              <img src="/placeholder.svg?height=40&width=100" alt="Netline" />
+            <div className="grid grid-cols-3 md:grid-cols-7 gap-8 items-center justify-items-center opacity-70">
+              <img src={Cisco} alt="Cisco" />
+              <img src={BitDefender} alt="Bitdefender" />
+              <img src={Ubiquiti} alt="Ubiquiti" />
+              <img src={Fluks} alt="Fluks" />
+              <img src={Microsoft} alt="Microsoft" />
+              <img src={Webroot} alt="Webroot" />
+              <img src={Next} alt="Netline" />
             </div>
           </div>
         </section>
 
         {/* Benefits Section */}
-        <section className="py-20">
+        {/* <section className="py-20">
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-16">Benefits</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -111,7 +119,56 @@ function App() {
               </div>
             </div>
           </div>
+        </section> */}
+
+
+        {/* Benefits Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-16">Benefits</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Card 1 */}
+              <div className="bg-white rounded-xl shadow-md p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-10 h-10 flex items-center justify-center text-blue-600">
+                    <CheckCircle className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">High Quality Deals</h3>
+                </div>
+                <p className="text-gray-600">
+                  Discover the best potential buyers and add-on opportunities instantly—curated, high-quality deals at your fingertips.
+                </p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="bg-white rounded-xl shadow-md p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-10 h-10 flex items-center justify-center text-blue-600">
+                    <Clock className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Save valuable time</h3>
+                </div>
+                <p className="text-gray-600">
+                  Save valuable time by accessing verified, deal-ready insights in one click—so you can focus on the value-adding work that truly matters.
+                </p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="bg-white rounded-xl shadow-md p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-10 h-10 flex items-center justify-center text-blue-600">
+                    <Puzzle className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Find more add-ons</h3>
+                </div>
+                <p className="text-gray-600">
+                  Streamline the process of identifying, vetting, and acting on add-on deals, so you can focus on creating long-term value.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
+
 
         {/* Core Features */}
         <section className="py-20 bg-gray-50">
@@ -200,7 +257,7 @@ function App() {
                   all the right insights
                 </h2>
                 <p className="text-gray-600 mb-6">
-                DealSource uses AI algorithms to analyze millions of relevant datapoints, which are enriched with the most trustworthy datasources, and Machine Learning for predictive analytics. One platform for all your M&A and PE data needs.
+                  DealSource uses AI algorithms to analyze millions of relevant datapoints, which are enriched with the most trustworthy datasources, and Machine Learning for predictive analytics. One platform for all your M&A and PE data needs.
                 </p>
                 <Button variant="outline">Get In Touch</Button>
               </div>
